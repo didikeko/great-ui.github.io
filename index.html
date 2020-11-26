@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>MySwagger</title>
+
+    <link href="style/main.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand nav-heading" href="#">
+        <img src="/images/logo.png" alt="" width="150px" class="logo-image">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <div class="form-inline my-2 my-lg-0 nav-heading">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle user-name" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              UserName
+            </a>
+            <div class="dropdown-menu item-dropdown" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#"><i data-feather="settings" class="l-set mr-1"></i> Settings</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><i data-feather="log-out" class="l-set mr-1"></i>Logout</a>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <div class="page-dashboard" >
+      <button class="btn btn-info d-md-none mr-auto mr-2" id="menu-toggle"> &laquo; Menu</button>
+      <div class="d-flex" id="wrapper">
+        <!-- sidebar -->
+        <div class="banner-right" id="sidebar-wrapper">
+          <div class="list-group list-group-flush">
+            <div class="btn-group dropright mt-2">
+              <button type="button" class="btn dropdown-item" data-toggle="modal" data-target="#exampleModal">
+                <div class="row">
+                  <div class="col-md-1 col-1">
+                    <img src="/images/add.png" class="logo-add" alt="">
+                  </div>
+                  <div class="col-md-1 col-1 sidebar-title">
+                    Create New
+                  </div>
+                </div>
+              </button>
+            </div>
+            <a href="test.html" class="dropdown-item mt-3">
+              <div class="row">
+                <div class="col-md-1 col-1">
+                  <i data-feather="home"></i>
+                </div>
+                <div class="col-md-1 col-1 sidebar-title">
+                  MyHub
+                </div>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item mt-3">
+              <div class="row">
+                <div class="col-md-1 col-1">
+                <i data-feather="search"></i>
+                </div>
+                <div class="col-md-1 col-1 sidebar-title">
+                  Search
+                </div>
+              </div>
+            </a>
+            <a href="#" class="dropdown-item mt-3">
+              <div class="row">
+                <div class="col-md-1 col-1 ">
+                  <i data-feather="log-out"></i>
+                </div>
+                <div class="col-md-1 col-1 sidebar-title">
+                  Sign Out
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+    
+        <!--page content -->
+        <div id="page-content-wrapper">
+            <div class="section-content section-dashboard-home" data-aos="fade-up">
+              <div class="container-fluid">
+                <div class="dashboard-heading">
+                  <h2 class="dashboard-title">Test</h2>
+                  <p class="dashboard-subtitle">View List</p>
+                </div>
+                <div class="dashboard-content">
+                  <p>test</p>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+
+
+            <!-- modal body -->
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Select a Template or create a Blank API</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <p style="font-size: 12px;">Enter a unique name for your API definition below and select a Template
+                    Select None for a Blank API</p>
+                    <form>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-4">
+                              <label for="OpenApi">OpenAPI Version</label>
+                          </div>
+                          <div class="col-md-2">
+                            <select class="" style="width: 50px;">
+                              <option>1.0</option>
+                              <option>2.0</option>
+                              <option>3.0</option>
+                            </select>
+                          </div>
+                        </div>         
+                      </div>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="OpenApi">Template</label>
+                          </div>
+                          <div class="col-md-2">
+                            <select class="" style="width: 100px;">
+                              <option>Petstore</option>
+                              <option>Simple API</option>
+                              <option>IOT</option>
+                              <option>OAUTH 2.0 - Implict</option>
+                              <option>OAUTH 2.0 - Password</option>
+                              <option>OAUTH 2.0 - Access Code</option>
+                              <option>OAUTH 2.0 - Aplication</option>
+                              <option>--None--</option>
+                            </select>
+                          </div>
+                        </div> 
+                      </div>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="OpenApi">Name</label>
+                          </div>
+                          <div class="col-md-8">
+                            <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="OpenApi">Owner</label>
+                          </div>
+                          <div class="col-md-6">
+                            <select class="" style="width: 100px;">
+                              <option>Username</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="OpenApi">Auto Mock API</label>
+                          </div>
+                          <div class="col-md-8">
+                            <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                            <label class="custom-control-label" for="customSwitch1"></label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
+                        <button type="button" class="btn btn-primary">CREATE API</button>
+                      </div>
+                    </form>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/vendor/bootstrap/js/feather.js"></script>
+    <script>
+      feather.replace()
+      $('#menu-toggle').click(function (e) {
+        e.preventDefault();
+        $('#wrapper').toggleClass('toggled');
+      });
+
+      // modal
+      $('#myModal').on('shown.bs.modal', function () {
+          $('#myInput').trigger('focus')
+        })
+    </script>
+  </body>
+</html>
