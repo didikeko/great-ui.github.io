@@ -49,8 +49,8 @@
         <!-- sidebar -->
         <div class="banner-right" id="sidebar-wrapper">
           <div class="list-group list-group-flush">
-            <div class="btn-group dropright mt-2">
-              <button type="button" class="btn dropdown-item" data-toggle="modal" data-target="#exampleModal">
+            <div class="btn-group dropright">
+              <button class="dropdown-item mt-3" data-toggle="modal" data-target="#exampleModal">
                 <div class="row">
                   <div class="col-md-1 col-1">
                     <img src="/images/add.png" class="logo-add" alt="">
@@ -163,10 +163,20 @@
                       <div class="form-group">
                         <div class="row">
                           <div class="col-md-4">
-                            <label for="OpenApi">Name</label>
+                            <label for="OpenApi">Project Name</label>
                           </div>
                           <div class="col-md-8">
                             <input type="text" class="form-control">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-4">
+                            <label for="OpenApi">Description</label>
+                          </div>
+                          <div class="col-md-8">
+                            <textarea type="text" class="form-control"></textarea>
                           </div>
                         </div>
                       </div>
@@ -197,7 +207,7 @@
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">CANCEL</button>
-                        <button type="button" class="btn btn-primary">CREATE API</button>
+                        <button type="button" class="btn btn-info">CREATE API</button>
                       </div>
                     </form>
                   </div>
